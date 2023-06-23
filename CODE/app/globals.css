@@ -36,6 +36,18 @@ body {
     @apply absolute top-16 left-0 right-0 bottom-0 -z-10 bg-main dark:bg-main-dark;
   }
 
+  .landingpage {
+    @apply w-full flex justify-center items-center h-full;
+  }
+
+  .landingpage__quote__container {
+    @apply w-1/2 h-48 backdrop-blur-md flex justify-center items-center flex-col border-black dark:border-white border-2 rounded-md;
+  }
+
+  .landingpage__quote {
+    @apply text-2xl font-semibold text-black dark:text-white;
+  }
+
   .navigation {
     @apply w-full h-16 flex justify-between items-center px-8 dark:bg-black bg-white shadow-md;
   }
