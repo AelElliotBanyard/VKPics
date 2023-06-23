@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  body,
+  html {
+    @apply h-full;
+  }
+
+  .background {
+    @apply absolute top-16 left-0 right-0 bottom-0 -z-10 bg-main dark:bg-main-dark;
+  }
+}
