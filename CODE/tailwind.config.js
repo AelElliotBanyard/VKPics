@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+///** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +15,23 @@ module.exports = {
         main: "url('/img/bg.png')",
         "main-dark": "url('/img/bg-dark.png')",
       },
+      textStroke: {
+        DEFAULT: "0.2rem #000000",
+        dark: "0.2rem #ffffff",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-stroke": (value) => ({
+            WebkitTextStroke: value,
+            WebkitTextFillColor: "transparent",
+          }),
+        },
+        { values: theme("textStroke") }
+      );
+    }),
+  ],
 };
