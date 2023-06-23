@@ -7,12 +7,26 @@ My Idea for the theme of this Project is a Company that takes Images of Traffic 
 ## Idea for Wireframe
 
 - Landing Page
+  ![Landing Page](./IMG/Landing Page.png)
+  ![Landing Page Dark](./IMG/Landing Page Dark.png)
 - Offers Page
+  ![Offers Page](./IMG/Offers.png)
+  ![Offers Page Dark](./IMG/Offers Dark.png)
 - Contact Page
+  ![Contact Page](./IMG/Contact Us.png)
+  ![Contact Page Dark](./IMG/Contact Us Dark.png)
 - About Page
-- Impressum Page
+  ![About Page](./IMG/About Us.png)
+  ![About Page Dark](./IMG/About Us Dark.png)
+- Impressum
+  ![Impressum Page](./IMG/Impressum.png)
+  ![Impressum Page Dark](./IMG/Impressum Dark.png)
 - Our Work Page
+  ![Projects Page](./IMG/Our Projects.png)
+  ![Projects Page Dark](./IMG/Our Projects Dark.png)
 - Error Page
+  ![Error Page](./IMG/Error.png)
+  ![Error Page Dark](./IMG/Error Dark.png)
 
 ## Tools
 
