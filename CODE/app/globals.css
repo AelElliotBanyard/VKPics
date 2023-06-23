@@ -84,3 +84,20 @@ body {
     @apply px-6 py-2 rounded-sm dark:bg-white dark:text-black bg-black text-white border-2 dark:border-black border-white;
   }
 }
+
+  .not-found {
+    @apply absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center flex-col bg-white dark:bg-black;
+  }
+
+  .not-found > .not-found__title {
+    @apply text-[212px] font-extrabold text-black dark:text-white bg-clip-text bg-main dark:bg-main-dark text-stroke dark:text-stroke-dark;
+  }
+
+  .not-found > .not-found__error {
+    @apply text-4xl font-bold px-4 py-2 text-black dark:text-white;
+  }
+
+  .not-found > .not-found__message {
+    @apply text-2xl font-semibold px-4 py-2 text-black dark:text-white;
+  }
+}
