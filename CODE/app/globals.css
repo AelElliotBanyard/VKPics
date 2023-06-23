@@ -83,8 +83,6 @@ body {
   .navigation__link__button.active {
     @apply px-6 py-2 rounded-sm dark:bg-white dark:text-black bg-black text-white border-2 dark:border-black border-white;
   }
-}
-
   .not-found {
     @apply absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center flex-col bg-white dark:bg-black;
   }
