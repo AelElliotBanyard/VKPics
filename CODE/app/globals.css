@@ -98,4 +98,48 @@ body {
   .not-found > .not-found__message {
     @apply text-2xl font-semibold px-4 py-2 text-black dark:text-white;
   }
+
+  .input__container {
+    @apply w-full h-full flex flex-col;
+  }
+
+  .input__container > .input__label {
+    @apply text-black dark:text-white text-2xl font-semibold;
+  }
+
+  .input__container > .input__input {
+    @apply w-full h-full rounded-md border-2 border-black dark:border-white text-black dark:text-white text-2xl font-semibold bg-transparent px-4;
+  }
+
+  .contactForm {
+    @apply w-full flex flex-row h-full;
+  }
+
+  .contactForm > .contactForm__left {
+    @apply w-1/2 h-full flex flex-col justify-center items-center px-2;
+  }
+
+  .contactForm > .contactForm__right {
+    @apply w-1/2 flex flex-col justify-center items-stretch px-2 gap-4;
+  }
+
+  .contactForm > .contactForm__right > .input__container {
+    @apply flex-grow;
+  }
+
+  .contactForm > .contactForm__right > .contactForm__button {
+    @apply h-2/5 border-2 rounded-md bg-white dark:bg-black text-lg;
+  }
+
+  .contact {
+    @apply w-full flex flex-col items-center gap-16 h-full py-16;
+  }
+
+  .contact > .contact__title {
+    @apply text-4xl font-bold text-black dark:text-white bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-md px-8 py-4 w-1/2 text-center;
+  }
+
+  .contact > .contact__form {
+    @apply w-2/3 h-1/2 flex flex-col justify-center items-center backdrop-blur-md p-4 border border-black dark:border-white rounded bg-white/50 dark:bg-black/50;
+  }
 }
