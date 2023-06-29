@@ -33,11 +33,13 @@ body {
   }
 
   .background {
-    @apply absolute top-16 left-0 right-0 bottom-0 -z-10 bg-main dark:bg-main-dark;
+    @apply -z-10 bg-main dark:bg-main-dark bg-repeat-y;
+    min-height: calc(100vh - 4rem);
   }
 
   .landingpage {
     @apply w-full flex justify-center items-center h-full;
+    min-height: calc(100vh - 4rem);
   }
 
   .landingpage__quote__container {
@@ -189,5 +191,29 @@ body {
 
   .offers__cards {
     @apply w-3/5 flex flex-row justify-center items-center gap-8;
+  }
+
+  .about {
+    @apply w-full flex flex-col items-center gap-16 min-h-full py-16 pb-10;
+  }
+
+  .about > .about__title {
+    @apply text-4xl font-bold text-black dark:text-white bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-md px-8 py-4 w-1/2 text-center;
+  }
+
+  .about > .about__section {
+    @apply w-1/2 px-8 py-4 bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-md;
+  }
+
+  .about > .about__section:nth-child(odd) {
+    @apply text-right;
+  }
+
+  .about > .about__section > .about__section__title {
+    @apply text-2xl font-semibold text-black dark:text-white;
+  }
+
+  .about > .about__section > .about__section__text {
+    @apply text-lg text-black dark:text-white;
   }
 }
