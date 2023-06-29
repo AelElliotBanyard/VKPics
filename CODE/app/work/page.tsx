@@ -1,4 +1,5 @@
 "use client";
+import Slider from "@/components/Slider";
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
@@ -79,7 +80,9 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="work__section"></div>
+      <div className="work__section">
+        <Slider img1="./img/slider/slider1Before.jpg" img2="./img/slider/slider1After.jpg" />
+      </div>
     </div>
   );
 };
