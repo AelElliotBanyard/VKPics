@@ -37,7 +37,7 @@ const Navigation = () => {
           href="/work"
           className={"navigation__link " + (current === "work" ? "active" : "")}
         >
-          Our Work
+          My Work
         </Link>
         <Link
           href="/contact"
