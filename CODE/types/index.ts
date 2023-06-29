@@ -11,3 +11,8 @@ export type InputProps = {
   onChange: (e: string) => void;
   type?: string;
 };
+
+export type SliderProps = {
+  img1: string;
+  img2: string;
+};
