@@ -2,8 +2,10 @@
 import Slider from "@/components/Slider";
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import Image from "next/image";
 
-const page = () => {
+const Work = () => {
+  const [galleryCurrent, setGalleryCurrent] = useState(0);
   const gallery = [
     {
       image: "./img/gallery/1.jpg",
@@ -30,7 +32,6 @@ const page = () => {
       title: "One traffic cadet standing in front of car at night",
     },
   ];
-  const [galleryCurrent, setGalleryCurrent] = useState(0);
   return (
     <div className="work">
       <h1 className="work__title">My Work</h1>
@@ -38,8 +39,8 @@ const page = () => {
         <div className="work__gallery">
           {gallery.map((item, index) => {
             return (
-              <div className="work__gallery__item">
-                <img
+              <div className="work__gallery__item" key={index}>
+                <Image
                   src={item.image}
                   alt={item.title}
                   className={
@@ -96,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Work;

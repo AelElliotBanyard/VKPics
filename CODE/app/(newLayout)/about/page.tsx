@@ -5,9 +5,9 @@ const page = () => {
       <div className="about__section">
         <h2 className="about__section__title">Who am I?</h2>
         <p className="about__section__text">
-          I'm a independent developer who loves to create new things and learn
+          I&apos;m a independent developer who loves to create new things and learn
           new technologies. <br />
-          I'm a self-taught developer who started learning programming in 2015.{" "}
+          I&apos;m a self-taught developer who started learning programming in 2015.{" "}
           <br />I also love to take photos and have taught myself how to edit
           them. <br />
           I take photos of nature, landscapes, animals and people. <br />
@@ -29,7 +29,7 @@ const page = () => {
       </div>
 
       <div className="about__section">
-        <h2 className="about__section__title">What's my Mission?</h2>
+        <h2 className="about__section__title">What&apos;s my Mission?</h2>
         <p className="about__section__text">
           My mission is to create a website where I can show my skills as a
           developer and my photos. <br />
