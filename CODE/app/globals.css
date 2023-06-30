@@ -249,15 +249,47 @@ body {
     @apply absolute top-0 bottom-0 right-0 w-6 flex justify-center items-center font-bold bg-white/50 dark:bg-black/50 backdrop-blur-md;
   }
 
-  .work > .work__section > .work__gallery > .work__gallery__item > .work__gallery__image__text {
+  .work
+    > .work__section
+    > .work__gallery
+    > .work__gallery__item
+    > .work__gallery__image__text {
     @apply absolute bottom-0 left-6 right-6 opacity-0 transition-all duration-300 ease-in-out text-center bg-white/50 dark:bg-black/50 backdrop-blur-md;
   }
 
-  .work > .work__section > .work__gallery > .work__gallery__item:hover > .work__gallery__image__text {
+  .work
+    > .work__section
+    > .work__gallery
+    > .work__gallery__item:hover
+    > .work__gallery__image__text {
     @apply opacity-100;
   }
 
-  .work > .work__section > .work__gallery > .work__gallery__item > .work__gallery__image {
+  .work
+    > .work__section
+    > .work__gallery
+    > .work__gallery__item
+    > .work__gallery__image {
     @apply bg-black dark:bg-white relative;
+  }
+
+  .footer {
+    @apply w-full flex flex-row items-center justify-between py-4 px-12;
+  }
+
+  .footer > .footer__title {
+    @apply text-2xl font-bold text-black dark:text-white;
+  }
+
+  .footer > .footer__links {
+    @apply flex flex-row items-start gap-4;
+  }
+
+  .footer > .footer__links > .footer__link {
+    @apply border-l-2;
+  }
+
+  .footer > .footer__links > a {
+    @apply text-black dark:text-white px-8;
   }
 }
