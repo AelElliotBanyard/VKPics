@@ -3,32 +3,38 @@ import Slider from "@/components/Slider";
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Image from "next/image";
+import img1 from "../../../public/img/gallery/1.jpg";
+import img2 from "../../../public/img/gallery/2.jpg";
+import img3 from "../../../public/img/gallery/3.jpg";
+import img4 from "../../../public/img/gallery/4.jpg";
+import img5 from "../../../public/img/gallery/5.jpg";
+import img6 from "../../../public/img/gallery/6.jpg";
 
 const Work = () => {
   const [galleryCurrent, setGalleryCurrent] = useState(0);
   const gallery = [
     {
-      image: "./img/gallery/1.jpg",
+      image: img1,
       title: "Two traffic cadets on crossing at day",
     },
     {
-      image: "./img/gallery/2.jpg",
+      image: img2,
       title: "One traffic cadet on crossing at day",
     },
     {
-      image: "./img/gallery/3.jpg",
+      image: img3,
       title: "One traffic cadet on crossing at night with blured cars",
     },
     {
-      image: "./img/gallery/4.jpg",
+      image: img4,
       title: "Crossing at night",
     },
     {
-      image: "./img/gallery/5.jpg",
+      image: img5,
       title: "One traffic cadet on crossing at night",
     },
     {
-      image: "./img/gallery/6.jpg",
+      image: img6,
       title: "One traffic cadet standing in front of car at night",
     },
   ];
