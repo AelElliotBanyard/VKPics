@@ -292,4 +292,41 @@ body {
   .footer > .footer__links > a {
     @apply text-black dark:text-white px-8;
   }
+
+  .impressum {
+    @apply w-full flex flex-col items-center gap-16 min-h-full py-16 pb-10;
+  }
+
+  .impressum > .impressum__title {
+    @apply text-4xl font-bold text-black dark:text-white bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-md px-8 py-4 w-1/2 text-center;
+  }
+
+  .impressum > .impressum__sections {
+    @apply flex flex-row w-1/2 gap-8 justify-between;
+  }
+
+  .impressum > .impressum__sections > .impressum__section {
+    @apply px-8 py-8 bg-white/50 dark:bg-black/50 backdrop-blur-md rounded-md flex flex-col gap-4;
+  }
+
+  .impressum
+    > .impressum__sections
+    > .impressum__section
+    > .impressum__section__title {
+    @apply text-2xl font-semibold text-black dark:text-white;
+  }
+
+  .impressum
+    > .impressum__sections
+    > .impressum__section
+    > .impressum__address {
+    @apply text-lg text-black dark:text-white;
+  }
+
+  .impressum
+    > .impressum__sections
+    > .impressum__section
+    > .impressum__contact {
+    @apply text-lg text-black dark:text-white;
+  }
 }
