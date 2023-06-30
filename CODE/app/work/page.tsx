@@ -81,7 +81,16 @@ const page = () => {
         </div>
       </div>
       <div className="work__section">
-        <Slider img1="./img/slider/slider1Before.jpg" img2="./img/slider/slider1After.jpg" />
+        <Slider
+          img1="./img/slider/slider1Before.jpg"
+          img2="./img/slider/slider1After.jpg"
+        />
+      </div>
+      <div className="work__section">
+        <Slider
+          img1="./img/slider/slider2Before.jpg"
+          img2="./img/slider/slider2After.jpg"
+        />
       </div>
     </div>
   );
